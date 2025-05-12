@@ -71,9 +71,43 @@
             margin-top: 30px;
             font-size: 0.9rem;
         }
+                nav {
+            background: linear-gradient(to right, #4CAF50, #2E8B57);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
+     <nav>
+         <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+<a href="{% url 'sulaymaniyah' %}">Sulaymaniyah</a>
+<a href="{% url 'hawler' %}">Hawler (Erbil)</a>
+<a href="{% url 'contact' %}">Contact</a>
+
+
+    </nav>
+
     <header>
         <h1>About Kurdistan Tourism</h1>
     </header>
