@@ -1,0 +1,106 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duhok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        main h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        main p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery img {
+            width: calc(50% - 0.5rem);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+        .gallery img:not(:hover) {
+            transform: scale(0.9);
+            opacity: 0.7;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Duhok</h1>
+    </header>
+    <main>
+        <h2>About Duhok</h2>
+        <p>Duhok is a beautiful city located in the Kurdistan Region of Iraq. It is known for its stunning landscapes, rich culture, and warm hospitality.</p>
+        <p>Explore the city's historical sites, enjoy its vibrant markets, and experience the unique blend of tradition and modernity.</p>
+        <h2>Things to Do</h2>
+        <p>Visit the Duhok Dam, enjoy the breathtaking views of the mountains, and immerse yourself in the local culture by trying traditional Kurdish cuisine.</p>
+        <p>For more information, visit the <a href="https://en.wikipedia.org/wiki/Duhok" target="_blank">Duhok Wikipedia page</a>.</p>
+
+       <div class="gallery">
+    <img src="{% static 'appC/images/download.jpg' %}  " alt="Duhok Place 1">
+    <img src="{% static 'appC/dohuk.webp' %}" alt="Duhok Place 2">
+    <img src="{% static 'appC/appC.jpg' %}" alt="Duhok Location 1">
+    <img src="{% static 'appC/a-kurdish-town-and-popular.jpg' %}" alt="Duhok Location 2">
+</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Duhok Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
