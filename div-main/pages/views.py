@@ -50,21 +50,8 @@ def hawler(request):
     ]
     return render(request, 'hawler.html', {'attractions': attractions})
 
-# Dohuk Touristic Sites
-def dohuk(request):
-    attractions = [
-        {
-            "name": "Dohuk Dam",
-            "image": "dohuk_dam.jpg",
-            "desc": "A scenic spot with a tranquil lake surrounded by hills."
-        },
-        {
-            "name": "Zawa Mountain",
-            "image": "zawa_mountain.jpg",
-            "desc": "Offers stunning views and great hiking trails."
-        },
-    ]
-    return render(request, 'dohuk.html', {'attractions': attractions})
+
+
 
 # Contact Page (Bonus)
 def contact(request):
